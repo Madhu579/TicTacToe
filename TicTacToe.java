@@ -144,6 +144,7 @@ public class TicTacToe {
         frame.add(restart,BorderLayout.SOUTH);
         restart.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
+                frame.dispose();
                 new TicTacToe();
             }
         });
